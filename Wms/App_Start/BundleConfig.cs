@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Wms
+namespace WMS.Server
 {
     public class BundleConfig
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wms.Models
+namespace WMS.Server.Models
 {
     class Product
     {

@@ -1,4 +1,4 @@
-namespace Wms.Migrations
+namespace WMS.Server.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

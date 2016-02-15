@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Wms.Models
+namespace WMS.Server.Models
 {
     internal class NotmappedAttribute : Attribute
     {

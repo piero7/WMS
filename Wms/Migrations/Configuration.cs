@@ -1,18 +1,18 @@
-namespace Wms.Migrations
+namespace WMS.Server.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Wms.Models.ModelContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<WMS.Server.Models.ModelContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Wms.Models.ModelContext context)
+        protected override void Seed(WMS.Server.Models.ModelContext context)
         {
             //  This method will be called after migrating to the latest version.
 

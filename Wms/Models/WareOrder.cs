@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wms.Models
+namespace WMS.Server.Models
 {
     class WareOrder
     {
@@ -22,19 +22,19 @@ namespace Wms.Models
 
         protected string detail_list_string { get; set; }
 
-        [Notmapped]
-        public List<int> DetailsList
-        {
-            get
-            {
-               if(string.IsNullOrEmpty(this.detail_list_string))
-                {
-                    return null;
-                }
+        //[Notmapped]
+        //public List<int> DetailsList
+        //{
+        //    get
+        //    {
+        //       if(string.IsNullOrEmpty(this.detail_list_string))
+        //        {
+        //            return null;
+        //        }
 
-                List<int> ret = new List<int>();
-                this.
-            }
-        }
+        //        List<int> ret = new List<int>();
+        //        this.
+        //    }
+        //}
     }
 }

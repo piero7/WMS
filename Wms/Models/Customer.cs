@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wms.Models
+namespace WMS.Server.Models
 {
     /// <summary>
     /// 计费用户

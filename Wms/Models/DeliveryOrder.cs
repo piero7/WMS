@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wms.Models
+namespace WMS.Server.Models
 {
     class DeliveryOrder
     {
@@ -20,8 +20,8 @@ namespace Wms.Models
 
         private  string detail_list { get; set; }
 
-        [NotMapped]
-        public List<int> detailLIst 
+        //[NotMapped]
+        //public List<int> detailLIst 
     }
 
 

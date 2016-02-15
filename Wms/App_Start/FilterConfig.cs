@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Wms
+namespace WMS.Server
 {
     public class FilterConfig
     {
