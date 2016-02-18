@@ -18,12 +18,12 @@ namespace WMS.Server.Models
         [ForeignKey("role_id")]
         public virtual Role Role { get; set; }
 
-        public int? administretor_id { get; set; }
+        public int? administrator_id { get; set; }
 
         [ForeignKey("administrator_id")]
         public virtual Administrator Administrator { get; set; }
 
-        public bool is_enanle { get; set; }
+        public bool is_enable { get; set; } = true;
 
         public string remarks { get; set; }
     }

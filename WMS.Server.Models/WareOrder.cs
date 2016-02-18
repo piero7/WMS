@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,19 +13,19 @@ namespace WMS.Server.Models
         [Key]
         public int id { get; set; }
 
-        public DateTime? create_date { get; set; }
+        public DateTime? create_date { get; set; } = DateTime.Now;
 
-        public DateTime? finish_daet { get; set; }
+        public DateTime? finish_date { get; set; }
 
-        public OrderStatus status { get; set; }
+        public OrderStatus status { get; set; } = 0;
 
         public string remarks { get; set; }
 
         protected string detail_list_string { get; set; }
 
-        public bool is_enable { get; set; }
+        public bool is_enable { get; set; } = true;
 
-        [Notmapped]
+        [NotMapped]
         public List<int> DetailsList
         {
             get

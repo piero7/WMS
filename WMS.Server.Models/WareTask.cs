@@ -8,29 +8,35 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class WareTaks
+    class WareTask
     {
         [Key]
         public int id { get; set; }
 
-        public DateTime? create_date { get; set; }
+        public DateTime? create_date { get; set; } = DateTime.Now;
 
         public DateTime? finsihe_date { get; set; }
 
         public int? employee_id { get; set; }
 
         [ForeignKey("employee_id")]
+        public Employee Employee { get; set; }
+
+        public int? warehouse_id { get; set; }
+
+        [ForeignKey("warehouse_id")]
+        public virtual Warehouse Warehouse { get; set; }
 
         public int? order_id { get; set; }
 
         [NotMapped]
         public WareOrder order { get; set; }
 
-        public WareTaskType type { get; set; }
+        public WareTaskType type { get; set; } = 0;
 
-        public WareTaskStatus status { get; set; }
+        public WareTaskStatus status { get; set; } = 0;
 
-        public bool is_enable { get; set; }
+        public bool is_enable { get; set; } = true;
 
         public string remarks { get; set; }
     }

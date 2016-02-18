@@ -20,13 +20,19 @@ namespace WMS.Server.Models
         public DbSet<Employee> EnployeeSet { get; set; }
 
         public DbSet<WarehouseEmployeeRelationship> Warehouse_Employee_RelationshipSet { get; set; }
+
+        public DbSet<WareTask> Ware_TaskSet { get; set; }
         #endregion
 
 
         #region order
         public DbSet<DeliveryOrder> Delivery_OrderSet { get; set; }
 
+        public DbSet<DeliveryOrderDetail> Delivery_Order_DetailSet { get; set; }
+
         public DbSet<EnterOrder> Enter_OrderSet { get; set; }
+
+        public DbSet<EnterOrderDetail> Enter_Order_DetailSet { get; set; }
         #endregion
 
 
@@ -38,6 +44,11 @@ namespace WMS.Server.Models
         public DbSet<RoleAdministratorRelationship> Role_Administrator_RelationshipSet { get; set; }
         #endregion
 
+        #region businsess 
+        public DbSet<Customer> CustomerSet { get; set; }
 
+        public DbSet<Product> ProductSet { get; set; }
+
+        #endregion
     }
 }

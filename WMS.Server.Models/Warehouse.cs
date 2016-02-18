@@ -16,17 +16,17 @@ namespace WMS.Server.Models
 
         public string address { get; set; }
 
-        public bool is_enabel { get; set; }
+        public bool is_enabel { get; set; } = true;
 
         public string inner_number { get; set; }
 
         public string token { get; set; }
 
-        public DateTime? last_login_date { get; set; }
+        public DateTime? last_login_date { get; set; } = DateTime.Now;
 
         public string remarks { get; set; }
 
-        public WarehouseStatus status { get; set; }
+        public WarehouseStatus status { get; set; } = 0;
 
     }
 

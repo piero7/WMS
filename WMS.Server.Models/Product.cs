@@ -14,6 +14,8 @@ namespace WMS.Server.Models
 
         public string inner_number { get; set; }
 
+        public bool is_enable { get; set; } = true;
+
         public string remarks { get; set; }
     }
 }

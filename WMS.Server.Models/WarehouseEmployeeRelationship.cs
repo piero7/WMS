@@ -21,7 +21,7 @@ namespace WMS.Server.Models
         [ForeignKey("warehouse_id")]
         public virtual Warehouse Warehouse { get; set; }
 
-        public int is_enable { get; set; }
+        public bool is_enable { get; set; } = true;
 
         public DateTime? cancel_date { get; set; }
 

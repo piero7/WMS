@@ -58,15 +58,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrator.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DeliveryOrder.cs" />
     <Compile Include="DeliveryOrderDetail.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EnterOrder.cs" />
     <Compile Include="EnterOrderDetail.cs" />
+    <Compile Include="Migrations\201602180615005_newSolCreate.cs" />
+    <Compile Include="Migrations\201602180615005_newSolCreate.Designer.cs">
+      <DependentUpon>201602180615005_newSolCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602180706235_addDefaultValue.cs" />
+    <Compile Include="Migrations\201602180706235_addDefaultValue.Designer.cs">
+      <DependentUpon>201602180706235_addDefaultValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
-    <Compile Include="NotmappedAttribute.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs" />
@@ -74,11 +81,19 @@
     <Compile Include="Warehouse.cs" />
     <Compile Include="WarehouseEmployeeRelationship.cs" />
     <Compile Include="WareOrder.cs" />
-    <Compile Include="WareTaks.cs" />
+    <Compile Include="WareTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201602180615005_newSolCreate.resx">
+      <DependentUpon>201602180615005_newSolCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602180706235_addDefaultValue.resx">
+      <DependentUpon>201602180706235_addDefaultValue.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

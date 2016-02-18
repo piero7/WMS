@@ -23,9 +23,9 @@ namespace WMS.Server.Models
         [ForeignKey("enter_order_id")]
         public virtual EnterOrder Enterorder { get; set; }
 
-        public bool is_enable { get; set; }
+        public bool is_enable { get; set; } = true;
 
-        public double count { get; set; }
+        public double count { get; set; } = 0;
 
         public string remarks { get; set; }
     }

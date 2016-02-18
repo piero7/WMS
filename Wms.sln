@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS.Server", "Wms\WMS.Serve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS.Server.Models", "WMS.Server.Models\WMS.Server.Models.csproj", "{84FBAA8C-4B2D-4242-B0E5-E6EF8552A48C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS.Server.WebApi", "WMS.Server.WebApi\WMS.Server.WebApi.csproj", "{8FA790D9-946C-455D-99F0-73E2C7B8F3E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{84FBAA8C-4B2D-4242-B0E5-E6EF8552A48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FBAA8C-4B2D-4242-B0E5-E6EF8552A48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FBAA8C-4B2D-4242-B0E5-E6EF8552A48C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA790D9-946C-455D-99F0-73E2C7B8F3E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA790D9-946C-455D-99F0-73E2C7B8F3E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA790D9-946C-455D-99F0-73E2C7B8F3E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA790D9-946C-455D-99F0-73E2C7B8F3E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

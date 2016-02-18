@@ -18,7 +18,7 @@ namespace WMS.Server.Models
 
         public DateTime? birthday { get; set; }
 
-        public int age { get; set; }
+        public int age { get; set; } = 0;
 
         public string describe { get; set; }
 
@@ -28,7 +28,7 @@ namespace WMS.Server.Models
 
         public string phone_number { get; set; }
 
-        public bool is_enable { get; set; }
+        public bool is_enable { get; set; } = true;
 
         /// <summary>
         /// 是否在工作时间中

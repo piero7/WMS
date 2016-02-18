@@ -141,11 +141,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201602140901018_testMysql.cs" />
-    <Compile Include="Migrations\201602140901018_testMysql.Designer.cs">
-      <DependentUpon>201602140901018_testMysql.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -247,9 +242,10 @@
     <Content Include="Scripts\jquery-2.2.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201602140901018_testMysql.resx">
-      <DependentUpon>201602140901018_testMysql.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\WMS.Server.Models\WMS.Server.Models.csproj">
+      <Project>{84fbaa8c-4b2d-4242-b0e5-e6ef8552a48c}</Project>
+      <Name>WMS.Server.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
