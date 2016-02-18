@@ -146,22 +146,6 @@
       <DependentUpon>201602140901018_testMysql.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Administrator.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\DeliveryOrderDetail.cs" />
-    <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EnterOrder.cs" />
-    <Compile Include="Models\ModelContext.cs" />
-    <Compile Include="Models\DeliveryOrder.cs" />
-    <Compile Include="Models\EnterOrderDetail.cs" />
-    <Compile Include="Models\NotmappedAttribute.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Role.cs" />
-    <Compile Include="Models\RoleAdministratorRelationship.cs" />
-    <Compile Include="Models\Warehouse.cs" />
-    <Compile Include="Models\WarehouseEmployeeRelationship.cs" />
-    <Compile Include="Models\WareOrder.cs" />
-    <Compile Include="Models\WareTaks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
