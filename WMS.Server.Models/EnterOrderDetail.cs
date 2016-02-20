@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class EnterOrderDetail
+    public class EnterOrderDetail
     {
         [Key]
         public int id { get; set; }

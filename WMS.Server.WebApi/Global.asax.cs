@@ -15,9 +15,14 @@ namespace WMS.Server.WebApi
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            ////GlobalConfiguration.Configuration.Services.Replace(typeof(System.Web.Http.Dispatcher.IHttpControllerSelector),
+            ////                                       new AreaHttpControllerSelector(
+            ////                                           GlobalConfiguration.Configuration));
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            GlobalConfiguration.Configuration.Services.Replace(typeof(System.Web.Http.Dispatcher.IHttpControllerSelector), new AreaHttpControllerSelector(GlobalConfiguration.Configuration));
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SupportedMediaTypes.Clear();
         }
     }
 }

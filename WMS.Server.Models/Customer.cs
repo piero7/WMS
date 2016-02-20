@@ -10,7 +10,7 @@ namespace WMS.Server.Models
     /// <summary>
     /// 计费用户
     /// </summary>
-    class Customer
+    public class Customer
     {
         [Key]
         public int id { get; set; }

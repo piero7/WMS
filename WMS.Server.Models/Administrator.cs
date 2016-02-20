@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class Administrator
+    public class Administrator
     {
         [Key]
         public int id { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class EnterOrder : WareOrder
+    public class EnterOrder : WareOrder
     {
     }
 }

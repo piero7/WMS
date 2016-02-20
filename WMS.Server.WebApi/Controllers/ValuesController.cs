@@ -35,5 +35,8 @@ namespace WMS.Server.WebApi.Controllers
         public void Delete(int id)
         {
         }
+        
+        //[HttpGet]
+        //[HttpBindRequired]
     }
 }

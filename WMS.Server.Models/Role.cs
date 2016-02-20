@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class Role
+    public class Role
     {
         public int id { get; set; }
 

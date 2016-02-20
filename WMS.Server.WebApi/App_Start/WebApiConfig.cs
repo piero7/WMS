@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Dispatcher;
 
 namespace WMS.Server.WebApi
 {
@@ -16,9 +17,10 @@ namespace WMS.Server.WebApi
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{area}/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            //config.Services.Replace(typeof(IHttpControllerSelector), new NamespaceHttpControllerSelector(config));
         }
     }
 }

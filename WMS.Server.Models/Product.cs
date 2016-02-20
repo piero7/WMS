@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class Product
+    public class Product
     {
         public int id { get; set; }
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WMS.Server.Models
 {
-    class ModelContext : DbContext
+    public class ModelContext : DbContext
     {
         public ModelContext() : base("MyContext")
         {
